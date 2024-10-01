@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signup form for user" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="favicon" type="image/png" />
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main id="mainContainer">
+      <h1 class="heading">Signup</h1>
+
+      <!-- input section -->
+      <form method="post">
+        <!-- full name -->
+        <label for="full_name">Full Name:</label>
+        <input  class="inputfill" type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
+      
+         <!-- email -->
+        <label for="email">Email:</label>
+        <input class="inputfill" type="email" id="email" name="email" placeholder="Example@gmail.com" required>
+      
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input class="inputfill" type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+        <label for="confirm_password">Confirm Password:</label>
+        <input class="inputfill" type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+      
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input class="inputfill" type="date" id="dob" name="dob" required>
+         
+
+        <!-- work status -->
+        <div class="radiobtn">
+        <input type="radio" id="student" name="work_status" value="Student" required>
+        <label for="student"> Student</label>
+        <input  type="radio" id="employee" name="work_status" value="Employee" required> 
+        <label for="employee"> Employee</label>
+       </div>
+        
+         <!-- terms -->
+        <div class="checkbox">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit">Signup</button>
+      </form>
+      
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

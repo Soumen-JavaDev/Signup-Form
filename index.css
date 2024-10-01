@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+/* Main container */
+#mainContainer {
+  width: 50%;
+  background-color: #000000;
+
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* Heading */
+.heading {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input box */
+.inputfill {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  background-color: black;
+  border-bottom: 1px solid white;
+  color: rgb(232, 220, 220);
+}
+
+input::placeholder {
+  color: rgb(232, 220, 220);
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 14px;
+}
+
+/* Button Styles */
+button {
+  padding: 15px;
+  background-color: #099b2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  width: 40%;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #41ca5f;
+}
+
+
+
+
+
+
+/* Media Queries to deffirent sreans  */
+@media (max-width: 768px) {
+  #mainContainer {
+    width: 80%;
+
+  }
+
+  .inputbox {
+    font-size: 18px;
+  }
+
+  button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  #mainContainer {
+    width: 90%;
+  }
+
+  .inputbox {
+    font-size: 16px;
+  }
+
+  button {
+    width: 60%;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+}
